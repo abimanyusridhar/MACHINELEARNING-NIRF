@@ -8,33 +8,46 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #000; /* Black background */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff; /* White text */
         }
 
         h1 {
-            color: #343a40;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            color: #ffb700; /* Yellow heading */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for heading */
             margin-bottom: 40px;
         }
 
         h2 {
-            color: #495057;
+            color: #ffb700; /* Yellow for subheadings */
             margin-top: 30px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #dee2e6;
+            border-bottom: 2px solid #444; /* Dark border for sections */
             padding-bottom: 10px;
         }
 
         .img-fluid {
-            border: 1px solid #dee2e6;
+            border: 1px solid #444; /* Dark border around images */
             border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1); /* White shadow for images */
             margin-bottom: 30px;
         }
 
         .container {
             max-width: 1000px;
+        }
+
+        .analytics-section {
+            margin-bottom: 30px;
+        }
+
+        /* Footer text */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #ccc; /* Light grey footer text */
+            font-size: 0.85rem;
         }
     </style>
 </head>
@@ -67,6 +80,10 @@
             <h2>Distribution of Institutes by State</h2>
             <img src="{{ url_for('static', filename='images/institutes_by_state.png') }}" class="img-fluid" alt="Distribution of Institutes by State">
         </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Data Analytics Dashboard. All rights reserved.</p>
     </div>
 </body>
 

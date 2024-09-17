@@ -8,68 +8,82 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #e9ecef;
+            background-color: #000; /* Black background */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff; /* White text */
         }
 
         .form-container {
-            background-color: #fff;
+            background-color: #1a1a1a; /* Dark grey for form background */
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
             max-width: 600px;
             margin: auto;
         }
 
         .form-group label {
             font-weight: 500;
+            color: #fff; /* White labels */
         }
 
         .form-control {
             border-radius: 5px;
             padding: 10px;
             font-size: 1rem;
+            background-color: #333; /* Dark background for inputs */
+            color: #fff; /* White text in inputs */
+            border: 1px solid #444; /* Border for inputs */
         }
 
         .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
+            background-color: #ffb700; /* Yellow button */
+            border-color: #ffb700;
             font-size: 1.2rem;
             padding: 10px 20px;
             border-radius: 5px;
+            color: #000; /* Black text on the button */
         }
 
         .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
+            background-color: #e6a700; /* Slightly darker yellow on hover */
+            border-color: #e6a700;
         }
 
         .prediction-result {
             font-size: 2rem;
             font-weight: bold;
-            color: #28a745;
+            color: #ffb700; /* Yellow text for prediction result */
         }
 
         .title {
-            color: #343a40;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            color: #ffb700; /* Yellow title */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for the title */
         }
 
         .info-text {
             font-size: 0.9rem;
-            color: #6c757d;
+            color: #ccc; /* Light grey info text */
         }
 
         .btn-info {
+            background-color: #ffb700; /* Yellow for secondary button */
+            color: #000; /* Black text */
             font-size: 1rem;
             padding: 8px 15px;
             border-radius: 5px;
+            border-color: #ffb700;
+        }
+
+        .btn-info:hover {
+            background-color: #e6a700;
+            border-color: #e6a700;
         }
 
         .footer {
             margin-top: 40px;
             text-align: center;
-            color: #6c757d;
+            color: #ccc; /* Light grey text for the footer */
             font-size: 0.85rem;
         }
     </style>
